@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite">
+    <test name="UnitTesting">
+        <classes>
+            <class name="com.javarticles.testng.UnitLevelTesting" />
+        </classes>
+    </test>
+    <test name="FunctionalTesting">
+        <classes>
+            <class name="com.javarticles.testng.FunctionalTesting" />
+        </classes>
+    </test>
+    <test name="UITesting">
+        <classes>
+            <class name="com.javarticles.testng.UITesting" />
+        </classes>
+    </test>
+    <test name="SomeFeature">
+        <groups>
+            <run>
+                <include name="someFeature" />
+            </run>
+        </groups>
+        <classes>
+            <class name="com.javarticles.testng.UITesting" />
+            <class name="com.javarticles.testng.UnitLevelTesting" />
+            <class name="com.javarticles.testng.FunctionalTesting" />
+        </classes>
+    </test>
+</suite>
